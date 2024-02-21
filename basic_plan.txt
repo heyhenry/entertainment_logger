@@ -1,0 +1,32 @@
+Creating Version 1.0
+
+Brainstorming & Planning Phase: 
+
+1. Description
+
+A localised program that records the user's entertainment habits.
+No API, pure user input but the program will ensure the correct parameters
+and styling is available for a cleaner and readable display.
+It will utilise a simple text file with columns and content separated by newlines and commas.
+
+2. Concepts to be used:
+
+File handling
+String manipulation
+
+3. Libraries/Frameworks to be used:
+
+Tkinter
+
+4. Features
+
+Recording movie, anime, manga, manhwas, books, tv shows and dramas
+
+4.1 Start with anime
+
+Individual cards that display and record:
+
+    - Episodes Watched / Total Episodes
+    - User Rating out of 10
+    - User progress status (Plan to Watch, Watching, Completed)
+
