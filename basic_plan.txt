@@ -26,7 +26,10 @@ Recording movie, anime, manga, manhwas, books, tv shows and dramas
 
 Individual cards that display and record:
 
+    - Anime Name
     - Episodes Watched / Total Episodes
     - User Rating out of 10
     - User progress status (Plan to Watch, Watching, Completed)
+    - Start watch date
+    - End watch date
 
