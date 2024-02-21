@@ -18,21 +18,34 @@ def display_anime_list(filename : str):
         read_content = file.read()
 
         lines = read_content.splitlines()
+        
+        # displays the titles
+        # categories = []
+        # title_bar = ''
 
-        categories = []
+        # for i in lines[0].split(','):
+        #     categories.append(i)
 
-        title_bar = ''
+        # for i in range(len(categories)):
+        #     if i != len(categories) - 1:
+        #         title_bar += (categories[i] + ' | ')
+        #     else:
+        #         title_bar += categories[i]
 
-        for i in lines[0].split(','):
-            categories.append(i)
+        content = []
 
-        for i in range(len(categories)):
-            if i != len(categories) - 1:
-                title_bar += (categories[i] + ' | ')
-            else:
-                title_bar += categories[i]
+        for i in lines:
+            line = i.split(',')
+            content.append(line)
 
-        print(title_bar)
+        for row in content:
+            display_line = ''
+            for i in range(len(row)):
+                if i != len(row) - 1:
+                    display_line += (row[i] + ' | ')
+                else:
+                    display_line += row[i]
+            print(display_line)
 
 def main():
     print(menu())
